@@ -1,3 +1,31 @@
+# Star Wars Coding Exercise
+
+This repository holds the Star Wars code exercise we use for interviewing engineers.
+
+## Installation
+
+```bash
+yarn
+```
+
+## Instructions
+
+Using the [Star Wars API](https://swapi.dev/documentation), create an autocomplete component that allows a user to find and select a Planet from the Star Wars universe. You can use any library you’d like, and any styling methodology/library that suits you (css, scss, css-in-js, Styled Components, etc).
+
+### Acceptance Criteria
+
+- The autocomplete list should open upon focus and close upon blur.
+- The component should allow the user to type in a partial or full planet name to query the Star Wars API and display the filtered results.
+- At least 2 letters are required before searching begins.
+- The user must be able to select a planet from the list.
+- As the user types, the request to fetch planets should be debounced.
+- Unnecessary requests (ie: once already made) should be cached.
+- The user should be able to tell when planets are being fetched.
+
+**This exercise is more about seeing how YOU think and code.**
+
+🎉 Good luck!
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -5,13 +33,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
-npm run dev
-# or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -34,4 +56,5 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
 # ITG-autocomplete
