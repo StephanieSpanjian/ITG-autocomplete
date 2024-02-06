@@ -76,7 +76,7 @@ const SearchInput = () => {
       {showSearchModalButton}
       {createPortal(
         <div
-          className=" bg-slate-600 my-4 text-slate-100"
+          className=" bg-slate-600 py-4 text-slate-100"
           style={{
             opacity: '90%',
             position: 'absolute',
@@ -87,17 +87,18 @@ const SearchInput = () => {
           }}
         >
           <form
-            className=" bg-slate-500 rounded-b-md"
+            className=" bg-slate-500 rounded-md p-2"
             onSubmit={handleSubmit(onSubmit)}
             style={{
               margin: 'auto',
               height: '80vh',
               width: '80vw',
+              zIndex: '9999',
             }}
           >
             <div className="grid grid-cols-1 gap-4 place-content-center">
               <input
-                className="text-slate-900"
+                className="text-slate-900 focus:outline-none focus-visible:ring rounded-md"
                 autoComplete="off" // It just seems like bad ux
                 aria-autocomplete="list"
                 type="text"
