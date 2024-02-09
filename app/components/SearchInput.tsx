@@ -99,7 +99,7 @@ const SearchInput = () => {
             <div className="grid grid-cols-1 gap-4 place-content-center">
               <input
                 className="text-slate-900 focus:outline-none focus-visible:ring rounded-md"
-                autoComplete="off" // It just seems like bad ux
+                autoComplete="off"
                 aria-autocomplete="list"
                 type="text"
                 {...register('q')}
